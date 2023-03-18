@@ -1,9 +1,9 @@
 import * as React from 'react'
 
-export default function Header() {
+export function Header() {
 	return (
 		<header>
-			<h1>REDDIT!!!!!!54!</h1>
+			<h1>REDDIT!546!!!</h1>
 		</header>
 	)
 }
