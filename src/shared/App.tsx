@@ -4,12 +4,15 @@ import { Layout } from './Layout'
 import './main.global.css'
 import { Header } from './Header'
 import { Content } from './Content'
+import { CardsList } from './CardsList'
 
 function AppComponent() {
 	return (
 		<Layout>
 			<Header />
-			<Content>content</Content>
+			<Content>
+				<CardsList />
+			</Content>
 		</Layout>
 	)
 }
