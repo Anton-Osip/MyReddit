@@ -5,6 +5,7 @@ import './main.global.css'
 import { Header } from './Header'
 import { Content } from './Content'
 import { CardsList } from './CardsList'
+import { Dropdown } from './Dropdown'
 
 function AppComponent() {
 	return (
@@ -13,6 +14,9 @@ function AppComponent() {
 			<Content>
 				<CardsList />
 			</Content>
+			<Dropdown button={<button>test</button>}>
+				<CardsList />
+			</Dropdown>
 		</Layout>
 	)
 }
