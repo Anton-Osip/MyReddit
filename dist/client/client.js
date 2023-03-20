@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "32879294df882e37a0ab";
+/******/ 	var hotCurrentHash = "912d8d872db2e9efc031";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -783,7 +783,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/static/";
+/******/ 	__webpack_require__.p = "//localhost:3001/static";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
@@ -843,14 +843,80 @@ eval("\r\nmodule.exports = function () {\r\n    return /[\\u001b\\u009b][[()#;?]
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./src/shared/header.css":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/shared/header.css ***!
-  \*******************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/shared/main.global.css":
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/shared/main.global.css ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".header__example--QgiVa {\\n\\tcolor: green;\\n}\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"example\": \"header__example--QgiVa\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/header.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);\"]);\n// Module\nexports.push([module.i, \":root {\\r\\n\\t--black: #333333;\\r\\n\\t--orange: #cc6633;\\r\\n\\t--green: #a4cc33;\\r\\n\\t--whiteLightness: 100%;\\r\\n\\t--white: hsl(0, 0%, var(--whiteLightness));\\r\\n\\t--grayF4: hsl(0, 0%, calc(var(--whiteLightness) - 4%));\\r\\n\\t--greyF3: hsl(0, 0%, calc(var(--whiteLightness) - 5%));\\r\\n\\t--greyEC: hsl(0, 0%, calc(var(--whiteLightness) - 7%));\\r\\n\\t--greyD9: hsl(0, 0%, calc(var(--whiteLightness) - 15%));\\r\\n\\t--greyC4: hsl(0, 0%, calc(var(--whiteLightness) - 23%));\\r\\n\\t--grey99: hsl(0, 0%, calc(var(--whiteLightness) - 40%));\\r\\n\\t--grey66: hsl(0, 0%, calc(var(--whiteLightness) - 60%));\\r\\n}\\r\\n\\r\\nbody {\\r\\n\\tpadding: 0;\\r\\n\\tmargin: 0;\\r\\n\\tbackground-color: var(--grayF4);\\r\\n\\tfont-size: 14px;\\r\\n\\tline-height: 16px;\\r\\n\\tfont-family: 'Roboto', serif;\\r\\n}\\r\\n\\r\\n* {\\r\\n\\tcolor: var(--black);\\r\\n\\tbox-sizing: border-box;\\r\\n\\t-webkit-font-smoothing: antialiased;\\r\\n\\t-moz-osx-font-smoothing: grayscale;\\r\\n}\\r\\n\\r\\nul {\\r\\n\\tmargin: 0;\\r\\n\\tpadding: 0;\\r\\n\\tlist-style: none;\\r\\n}\\r\\n\\r\\na {\\r\\n\\ttext-decoration: none;\\r\\n}\\r\\n\\r\\nbutton {\\r\\n\\tpadding: 0;\\r\\n\\tborder: 0;\\r\\n\\tbackground: transparent;\\r\\n\\tcursor: pointer;\\r\\n}\\r\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/main.global.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/shared/Content/content.css":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/shared/Content/content.css ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".content__content--2O9-S {\\r\\n\\toverflow: hidden;\\r\\n}\\r\\n\\r\\n@media all and (min-width: 1024px) {\\r\\n\\t.content__content--2O9-S {\\r\\n\\t\\tbackground-color: var(--white);\\r\\n\\t\\tborder-radius: 7px 7px 0 0;\\r\\n\\t}\\r\\n}\\r\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"content\": \"content__content--2O9-S\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/Content/content.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/SearchBlock/searchblock.css":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/shared/Header/SearchBlock/searchblock.css ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".searchblock__searchBlock--3aDPv {\\r\\n\\tdisplay: flex;\\r\\n\\tflex-flow: row nowrap;\\r\\n\\tjustify-content: space-between;\\r\\n\\talign-items: center;\\r\\n\\tpadding: 14px 20px;\\r\\n\\tbackground-color: var(--white);\\r\\n\\tborder-radius: 0 0 7px 7px;\\r\\n\\tbox-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\\r\\n\\tmargin: 0 0 38px;\\r\\n}\\r\\n\\r\\n@media all and (min-width: 1024px) {\\r\\n\\t.searchblock__searchBlock--3aDPv {\\r\\n\\t\\tpadding: 0;\\r\\n\\t\\tmargin: 0 0 0 auto;\\r\\n\\t\\tbackground-color: transparent;\\r\\n\\t\\tborder-radius: 0;\\r\\n\\t\\tbox-shadow: none;\\r\\n\\t\\torder: 3;\\r\\n\\t}\\r\\n}\\r\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"searchBlock\": \"searchblock__searchBlock--3aDPv\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/searchblock.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/SortBlock/sortblock.css":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/shared/Header/SortBlock/sortblock.css ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".sortblock__sortBlock--141aZ {\\r\\n\\tbackground-color: var(--white);\\r\\n\\tpadding: 11px 20px;\\r\\n\\tborder-radius: 7px;\\r\\n\\tmargin: 0 0 20px;\\r\\n}\\r\\n\\r\\n@media all and (min-width: 1024px) {\\r\\n\\t.sortblock__sortBlock--141aZ {\\r\\n\\t\\tbackground-color: transparent;\\r\\n\\t\\tpadding: 0;\\r\\n\\t\\tmargin: 0;\\r\\n\\t\\tborder-radius: 0;\\r\\n\\t}\\r\\n}\\r\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"sortBlock\": \"sortblock__sortBlock--141aZ\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/Header/SortBlock/sortblock.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/ThreadTitle/threadtitle.css":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/shared/Header/ThreadTitle/threadtitle.css ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".threadtitle__threadTitle--oxugx {\\r\\n\\tfont-weight: normal;\\r\\n\\tpadding: 0 20px;\\r\\n\\tfont-size: 20px;\\r\\n\\tline-height: 23px;\\r\\n\\tmargin: 0 0 15px;\\r\\n}\\r\\n\\r\\n@media all and (min-width: 1024px) {\\r\\n\\t.threadtitle__threadTitle--oxugx {\\r\\n\\t\\tpadding: 0;\\r\\n\\t\\tmargin: 0 27px 0 0;\\r\\n\\t\\tfont-size: 28px;\\r\\n\\t\\tline-height: 33px;\\r\\n\\t}\\r\\n}\\r\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"threadTitle\": \"threadtitle__threadTitle--oxugx\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/Header/ThreadTitle/threadtitle.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/header.css":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/shared/Header/header.css ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"@media all and (min-width: 1024px) {\\r\\n\\t.header__header--bAgyG {\\r\\n\\t\\tdisplay: flex;\\r\\n\\t\\tflex-flow: row nowrap;\\r\\n\\t\\talign-items: center;\\r\\n\\t\\tpadding: 40px;\\r\\n\\t}\\r\\n}\\r\\n\\r\\n@media all and (min-width: 1540px) {\\r\\n\\t.header__header--bAgyG {\\r\\n\\t\\tpadding: 67px 0;\\r\\n\\t}\\r\\n}\\r\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"header\": \"header__header--bAgyG\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/Header/header.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/shared/Layout/layout.css":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/shared/Layout/layout.css ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".layout__layout--2fANc {\\r\\n\\tmax-width: 1400px;\\r\\n\\tmargin: 0 auto;\\r\\n}\\r\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"layout\": \"layout__layout--2fANc\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/Layout/layout.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
 
 /***/ }),
 
@@ -1250,15 +1316,15 @@ eval("\r\n/*eslint-env browser*/\r\nvar clientOverlay = document.createElement('
 
 /***/ }),
 
-/***/ "./node_modules/webpack-hot-middleware/client.js?path=http://localhost:3001/static/__webpack_hmr":
-/*!******************************************************************************************!*\
-  !*** (webpack)-hot-middleware/client.js?path=http://localhost:3001/static/__webpack_hmr ***!
-  \******************************************************************************************/
+/***/ "./node_modules/webpack-hot-middleware/client.js?path=//localhost:3001/static/__webpack_hmr":
+/*!*************************************************************************************!*\
+  !*** (webpack)-hot-middleware/client.js?path=//localhost:3001/static/__webpack_hmr ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(__resourceQuery, module) {\r\n/*eslint-env browser*/\r\n/*global __resourceQuery __webpack_public_path__*/\r\nvar options = {\r\n    path: '/__webpack_hmr',\r\n    timeout: 20 * 1000,\r\n    overlay: true,\r\n    reload: false,\r\n    log: true,\r\n    warn: true,\r\n    name: '',\r\n    autoConnect: true,\r\n    overlayStyles: {},\r\n    overlayWarnings: false,\r\n    ansiColors: {},\r\n};\r\nif (true) {\r\n    var querystring = __webpack_require__(/*! querystring */ \"./node_modules/querystring-es3/index.js\");\r\n    var overrides = querystring.parse(__resourceQuery.slice(1));\r\n    setOverrides(overrides);\r\n}\r\nif (typeof window === 'undefined') {\r\n    // do nothing\r\n}\r\nelse if (typeof window.EventSource === 'undefined') {\r\n    console.warn(\"webpack-hot-middleware's client requires EventSource to work. \" +\r\n        'You should include a polyfill if you want to support this browser: ' +\r\n        'https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events#Tools');\r\n}\r\nelse {\r\n    if (options.autoConnect) {\r\n        connect();\r\n    }\r\n}\r\n/* istanbul ignore next */\r\nfunction setOptionsAndConnect(overrides) {\r\n    setOverrides(overrides);\r\n    connect();\r\n}\r\nfunction setOverrides(overrides) {\r\n    if (overrides.autoConnect)\r\n        options.autoConnect = overrides.autoConnect == 'true';\r\n    if (overrides.path)\r\n        options.path = overrides.path;\r\n    if (overrides.timeout)\r\n        options.timeout = overrides.timeout;\r\n    if (overrides.overlay)\r\n        options.overlay = overrides.overlay !== 'false';\r\n    if (overrides.reload)\r\n        options.reload = overrides.reload !== 'false';\r\n    if (overrides.noInfo && overrides.noInfo !== 'false') {\r\n        options.log = false;\r\n    }\r\n    if (overrides.name) {\r\n        options.name = overrides.name;\r\n    }\r\n    if (overrides.quiet && overrides.quiet !== 'false') {\r\n        options.log = false;\r\n        options.warn = false;\r\n    }\r\n    if (overrides.dynamicPublicPath) {\r\n        options.path = __webpack_require__.p + options.path;\r\n    }\r\n    if (overrides.ansiColors)\r\n        options.ansiColors = JSON.parse(overrides.ansiColors);\r\n    if (overrides.overlayStyles)\r\n        options.overlayStyles = JSON.parse(overrides.overlayStyles);\r\n    if (overrides.overlayWarnings) {\r\n        options.overlayWarnings = overrides.overlayWarnings == 'true';\r\n    }\r\n}\r\nfunction EventSourceWrapper() {\r\n    var source;\r\n    var lastActivity = new Date();\r\n    var listeners = [];\r\n    init();\r\n    var timer = setInterval(function () {\r\n        if (new Date() - lastActivity > options.timeout) {\r\n            handleDisconnect();\r\n        }\r\n    }, options.timeout / 2);\r\n    function init() {\r\n        source = new window.EventSource(options.path);\r\n        source.onopen = handleOnline;\r\n        source.onerror = handleDisconnect;\r\n        source.onmessage = handleMessage;\r\n    }\r\n    function handleOnline() {\r\n        if (options.log)\r\n            console.log('[HMR] connected');\r\n        lastActivity = new Date();\r\n    }\r\n    function handleMessage(event) {\r\n        lastActivity = new Date();\r\n        for (var i = 0; i < listeners.length; i++) {\r\n            listeners[i](event);\r\n        }\r\n    }\r\n    function handleDisconnect() {\r\n        clearInterval(timer);\r\n        source.close();\r\n        setTimeout(init, options.timeout);\r\n    }\r\n    return {\r\n        addMessageListener: function (fn) {\r\n            listeners.push(fn);\r\n        },\r\n    };\r\n}\r\nfunction getEventSourceWrapper() {\r\n    if (!window.__whmEventSourceWrapper) {\r\n        window.__whmEventSourceWrapper = {};\r\n    }\r\n    if (!window.__whmEventSourceWrapper[options.path]) {\r\n        // cache the wrapper for other entries loaded on\r\n        // the same page with the same options.path\r\n        window.__whmEventSourceWrapper[options.path] = EventSourceWrapper();\r\n    }\r\n    return window.__whmEventSourceWrapper[options.path];\r\n}\r\nfunction connect() {\r\n    getEventSourceWrapper().addMessageListener(handleMessage);\r\n    function handleMessage(event) {\r\n        if (event.data == '\\uD83D\\uDC93') {\r\n            return;\r\n        }\r\n        try {\r\n            processMessage(JSON.parse(event.data));\r\n        }\r\n        catch (ex) {\r\n            if (options.warn) {\r\n                console.warn('Invalid HMR message: ' + event.data + '\\n' + ex);\r\n            }\r\n        }\r\n    }\r\n}\r\n// the reporter needs to be a singleton on the page\r\n// in case the client is being used by multiple bundles\r\n// we only want to report once.\r\n// all the errors will go to all clients\r\nvar singletonKey = '__webpack_hot_middleware_reporter__';\r\nvar reporter;\r\nif (typeof window !== 'undefined') {\r\n    if (!window[singletonKey]) {\r\n        window[singletonKey] = createReporter();\r\n    }\r\n    reporter = window[singletonKey];\r\n}\r\nfunction createReporter() {\r\n    var strip = __webpack_require__(/*! strip-ansi */ \"./node_modules/strip-ansi/index.js\");\r\n    var overlay;\r\n    if (typeof document !== 'undefined' && options.overlay) {\r\n        overlay = __webpack_require__(/*! ./client-overlay */ \"./node_modules/webpack-hot-middleware/client-overlay.js\")({\r\n            ansiColors: options.ansiColors,\r\n            overlayStyles: options.overlayStyles,\r\n        });\r\n    }\r\n    var styles = {\r\n        errors: 'color: #ff0000;',\r\n        warnings: 'color: #999933;',\r\n    };\r\n    var previousProblems = null;\r\n    function log(type, obj) {\r\n        var newProblems = obj[type]\r\n            .map(function (msg) {\r\n            return strip(msg);\r\n        })\r\n            .join('\\n');\r\n        if (previousProblems == newProblems) {\r\n            return;\r\n        }\r\n        else {\r\n            previousProblems = newProblems;\r\n        }\r\n        var style = styles[type];\r\n        var name = obj.name ? \"'\" + obj.name + \"' \" : '';\r\n        var title = '[HMR] bundle ' + name + 'has ' + obj[type].length + ' ' + type;\r\n        // NOTE: console.warn or console.error will print the stack trace\r\n        // which isn't helpful here, so using console.log to escape it.\r\n        if (console.group && console.groupEnd) {\r\n            console.group('%c' + title, style);\r\n            console.log('%c' + newProblems, style);\r\n            console.groupEnd();\r\n        }\r\n        else {\r\n            console.log('%c' + title + '\\n\\t%c' + newProblems.replace(/\\n/g, '\\n\\t'), style + 'font-weight: bold;', style + 'font-weight: normal;');\r\n        }\r\n    }\r\n    return {\r\n        cleanProblemsCache: function () {\r\n            previousProblems = null;\r\n        },\r\n        problems: function (type, obj) {\r\n            if (options.warn) {\r\n                log(type, obj);\r\n            }\r\n            if (overlay) {\r\n                if (options.overlayWarnings || type === 'errors') {\r\n                    overlay.showProblems(type, obj[type]);\r\n                    return false;\r\n                }\r\n                overlay.clear();\r\n            }\r\n            return true;\r\n        },\r\n        success: function () {\r\n            if (overlay)\r\n                overlay.clear();\r\n        },\r\n        useCustomOverlay: function (customOverlay) {\r\n            overlay = customOverlay;\r\n        },\r\n    };\r\n}\r\nvar processUpdate = __webpack_require__(/*! ./process-update */ \"./node_modules/webpack-hot-middleware/process-update.js\");\r\nvar customHandler;\r\nvar subscribeAllHandler;\r\nfunction processMessage(obj) {\r\n    switch (obj.action) {\r\n        case 'building':\r\n            if (options.log) {\r\n                console.log('[HMR] bundle ' +\r\n                    (obj.name ? \"'\" + obj.name + \"' \" : '') +\r\n                    'rebuilding');\r\n            }\r\n            break;\r\n        case 'built':\r\n            if (options.log) {\r\n                console.log('[HMR] bundle ' +\r\n                    (obj.name ? \"'\" + obj.name + \"' \" : '') +\r\n                    'rebuilt in ' +\r\n                    obj.time +\r\n                    'ms');\r\n            }\r\n        // fall through\r\n        case 'sync':\r\n            if (obj.name && options.name && obj.name !== options.name) {\r\n                return;\r\n            }\r\n            var applyUpdate = true;\r\n            if (obj.errors.length > 0) {\r\n                if (reporter)\r\n                    reporter.problems('errors', obj);\r\n                applyUpdate = false;\r\n            }\r\n            else if (obj.warnings.length > 0) {\r\n                if (reporter) {\r\n                    var overlayShown = reporter.problems('warnings', obj);\r\n                    applyUpdate = overlayShown;\r\n                }\r\n            }\r\n            else {\r\n                if (reporter) {\r\n                    reporter.cleanProblemsCache();\r\n                    reporter.success();\r\n                }\r\n            }\r\n            if (applyUpdate) {\r\n                processUpdate(obj.hash, obj.modules, options);\r\n            }\r\n            break;\r\n        default:\r\n            if (customHandler) {\r\n                customHandler(obj);\r\n            }\r\n    }\r\n    if (subscribeAllHandler) {\r\n        subscribeAllHandler(obj);\r\n    }\r\n}\r\nif (module) {\r\n    module.exports = {\r\n        subscribeAll: function subscribeAll(handler) {\r\n            subscribeAllHandler = handler;\r\n        },\r\n        subscribe: function subscribe(handler) {\r\n            customHandler = handler;\r\n        },\r\n        useCustomOverlay: function useCustomOverlay(customOverlay) {\r\n            if (reporter)\r\n                reporter.useCustomOverlay(customOverlay);\r\n        },\r\n        setOptionsAndConnect: setOptionsAndConnect,\r\n    };\r\n}\r\n\n/* WEBPACK VAR INJECTION */}.call(this, \"?path=http://localhost:3001/static/__webpack_hmr\", __webpack_require__(/*! ./../webpack/buildin/module.js */ \"./node_modules/webpack/buildin/module.js\")(module)))\n\n//# sourceURL=webpack:///(webpack)-hot-middleware/client.js?");
+eval("/* WEBPACK VAR INJECTION */(function(__resourceQuery, module) {\r\n/*eslint-env browser*/\r\n/*global __resourceQuery __webpack_public_path__*/\r\nvar options = {\r\n    path: '/__webpack_hmr',\r\n    timeout: 20 * 1000,\r\n    overlay: true,\r\n    reload: false,\r\n    log: true,\r\n    warn: true,\r\n    name: '',\r\n    autoConnect: true,\r\n    overlayStyles: {},\r\n    overlayWarnings: false,\r\n    ansiColors: {},\r\n};\r\nif (true) {\r\n    var querystring = __webpack_require__(/*! querystring */ \"./node_modules/querystring-es3/index.js\");\r\n    var overrides = querystring.parse(__resourceQuery.slice(1));\r\n    setOverrides(overrides);\r\n}\r\nif (typeof window === 'undefined') {\r\n    // do nothing\r\n}\r\nelse if (typeof window.EventSource === 'undefined') {\r\n    console.warn(\"webpack-hot-middleware's client requires EventSource to work. \" +\r\n        'You should include a polyfill if you want to support this browser: ' +\r\n        'https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events#Tools');\r\n}\r\nelse {\r\n    if (options.autoConnect) {\r\n        connect();\r\n    }\r\n}\r\n/* istanbul ignore next */\r\nfunction setOptionsAndConnect(overrides) {\r\n    setOverrides(overrides);\r\n    connect();\r\n}\r\nfunction setOverrides(overrides) {\r\n    if (overrides.autoConnect)\r\n        options.autoConnect = overrides.autoConnect == 'true';\r\n    if (overrides.path)\r\n        options.path = overrides.path;\r\n    if (overrides.timeout)\r\n        options.timeout = overrides.timeout;\r\n    if (overrides.overlay)\r\n        options.overlay = overrides.overlay !== 'false';\r\n    if (overrides.reload)\r\n        options.reload = overrides.reload !== 'false';\r\n    if (overrides.noInfo && overrides.noInfo !== 'false') {\r\n        options.log = false;\r\n    }\r\n    if (overrides.name) {\r\n        options.name = overrides.name;\r\n    }\r\n    if (overrides.quiet && overrides.quiet !== 'false') {\r\n        options.log = false;\r\n        options.warn = false;\r\n    }\r\n    if (overrides.dynamicPublicPath) {\r\n        options.path = __webpack_require__.p + options.path;\r\n    }\r\n    if (overrides.ansiColors)\r\n        options.ansiColors = JSON.parse(overrides.ansiColors);\r\n    if (overrides.overlayStyles)\r\n        options.overlayStyles = JSON.parse(overrides.overlayStyles);\r\n    if (overrides.overlayWarnings) {\r\n        options.overlayWarnings = overrides.overlayWarnings == 'true';\r\n    }\r\n}\r\nfunction EventSourceWrapper() {\r\n    var source;\r\n    var lastActivity = new Date();\r\n    var listeners = [];\r\n    init();\r\n    var timer = setInterval(function () {\r\n        if (new Date() - lastActivity > options.timeout) {\r\n            handleDisconnect();\r\n        }\r\n    }, options.timeout / 2);\r\n    function init() {\r\n        source = new window.EventSource(options.path);\r\n        source.onopen = handleOnline;\r\n        source.onerror = handleDisconnect;\r\n        source.onmessage = handleMessage;\r\n    }\r\n    function handleOnline() {\r\n        if (options.log)\r\n            console.log('[HMR] connected');\r\n        lastActivity = new Date();\r\n    }\r\n    function handleMessage(event) {\r\n        lastActivity = new Date();\r\n        for (var i = 0; i < listeners.length; i++) {\r\n            listeners[i](event);\r\n        }\r\n    }\r\n    function handleDisconnect() {\r\n        clearInterval(timer);\r\n        source.close();\r\n        setTimeout(init, options.timeout);\r\n    }\r\n    return {\r\n        addMessageListener: function (fn) {\r\n            listeners.push(fn);\r\n        },\r\n    };\r\n}\r\nfunction getEventSourceWrapper() {\r\n    if (!window.__whmEventSourceWrapper) {\r\n        window.__whmEventSourceWrapper = {};\r\n    }\r\n    if (!window.__whmEventSourceWrapper[options.path]) {\r\n        // cache the wrapper for other entries loaded on\r\n        // the same page with the same options.path\r\n        window.__whmEventSourceWrapper[options.path] = EventSourceWrapper();\r\n    }\r\n    return window.__whmEventSourceWrapper[options.path];\r\n}\r\nfunction connect() {\r\n    getEventSourceWrapper().addMessageListener(handleMessage);\r\n    function handleMessage(event) {\r\n        if (event.data == '\\uD83D\\uDC93') {\r\n            return;\r\n        }\r\n        try {\r\n            processMessage(JSON.parse(event.data));\r\n        }\r\n        catch (ex) {\r\n            if (options.warn) {\r\n                console.warn('Invalid HMR message: ' + event.data + '\\n' + ex);\r\n            }\r\n        }\r\n    }\r\n}\r\n// the reporter needs to be a singleton on the page\r\n// in case the client is being used by multiple bundles\r\n// we only want to report once.\r\n// all the errors will go to all clients\r\nvar singletonKey = '__webpack_hot_middleware_reporter__';\r\nvar reporter;\r\nif (typeof window !== 'undefined') {\r\n    if (!window[singletonKey]) {\r\n        window[singletonKey] = createReporter();\r\n    }\r\n    reporter = window[singletonKey];\r\n}\r\nfunction createReporter() {\r\n    var strip = __webpack_require__(/*! strip-ansi */ \"./node_modules/strip-ansi/index.js\");\r\n    var overlay;\r\n    if (typeof document !== 'undefined' && options.overlay) {\r\n        overlay = __webpack_require__(/*! ./client-overlay */ \"./node_modules/webpack-hot-middleware/client-overlay.js\")({\r\n            ansiColors: options.ansiColors,\r\n            overlayStyles: options.overlayStyles,\r\n        });\r\n    }\r\n    var styles = {\r\n        errors: 'color: #ff0000;',\r\n        warnings: 'color: #999933;',\r\n    };\r\n    var previousProblems = null;\r\n    function log(type, obj) {\r\n        var newProblems = obj[type]\r\n            .map(function (msg) {\r\n            return strip(msg);\r\n        })\r\n            .join('\\n');\r\n        if (previousProblems == newProblems) {\r\n            return;\r\n        }\r\n        else {\r\n            previousProblems = newProblems;\r\n        }\r\n        var style = styles[type];\r\n        var name = obj.name ? \"'\" + obj.name + \"' \" : '';\r\n        var title = '[HMR] bundle ' + name + 'has ' + obj[type].length + ' ' + type;\r\n        // NOTE: console.warn or console.error will print the stack trace\r\n        // which isn't helpful here, so using console.log to escape it.\r\n        if (console.group && console.groupEnd) {\r\n            console.group('%c' + title, style);\r\n            console.log('%c' + newProblems, style);\r\n            console.groupEnd();\r\n        }\r\n        else {\r\n            console.log('%c' + title + '\\n\\t%c' + newProblems.replace(/\\n/g, '\\n\\t'), style + 'font-weight: bold;', style + 'font-weight: normal;');\r\n        }\r\n    }\r\n    return {\r\n        cleanProblemsCache: function () {\r\n            previousProblems = null;\r\n        },\r\n        problems: function (type, obj) {\r\n            if (options.warn) {\r\n                log(type, obj);\r\n            }\r\n            if (overlay) {\r\n                if (options.overlayWarnings || type === 'errors') {\r\n                    overlay.showProblems(type, obj[type]);\r\n                    return false;\r\n                }\r\n                overlay.clear();\r\n            }\r\n            return true;\r\n        },\r\n        success: function () {\r\n            if (overlay)\r\n                overlay.clear();\r\n        },\r\n        useCustomOverlay: function (customOverlay) {\r\n            overlay = customOverlay;\r\n        },\r\n    };\r\n}\r\nvar processUpdate = __webpack_require__(/*! ./process-update */ \"./node_modules/webpack-hot-middleware/process-update.js\");\r\nvar customHandler;\r\nvar subscribeAllHandler;\r\nfunction processMessage(obj) {\r\n    switch (obj.action) {\r\n        case 'building':\r\n            if (options.log) {\r\n                console.log('[HMR] bundle ' +\r\n                    (obj.name ? \"'\" + obj.name + \"' \" : '') +\r\n                    'rebuilding');\r\n            }\r\n            break;\r\n        case 'built':\r\n            if (options.log) {\r\n                console.log('[HMR] bundle ' +\r\n                    (obj.name ? \"'\" + obj.name + \"' \" : '') +\r\n                    'rebuilt in ' +\r\n                    obj.time +\r\n                    'ms');\r\n            }\r\n        // fall through\r\n        case 'sync':\r\n            if (obj.name && options.name && obj.name !== options.name) {\r\n                return;\r\n            }\r\n            var applyUpdate = true;\r\n            if (obj.errors.length > 0) {\r\n                if (reporter)\r\n                    reporter.problems('errors', obj);\r\n                applyUpdate = false;\r\n            }\r\n            else if (obj.warnings.length > 0) {\r\n                if (reporter) {\r\n                    var overlayShown = reporter.problems('warnings', obj);\r\n                    applyUpdate = overlayShown;\r\n                }\r\n            }\r\n            else {\r\n                if (reporter) {\r\n                    reporter.cleanProblemsCache();\r\n                    reporter.success();\r\n                }\r\n            }\r\n            if (applyUpdate) {\r\n                processUpdate(obj.hash, obj.modules, options);\r\n            }\r\n            break;\r\n        default:\r\n            if (customHandler) {\r\n                customHandler(obj);\r\n            }\r\n    }\r\n    if (subscribeAllHandler) {\r\n        subscribeAllHandler(obj);\r\n    }\r\n}\r\nif (module) {\r\n    module.exports = {\r\n        subscribeAll: function subscribeAll(handler) {\r\n            subscribeAllHandler = handler;\r\n        },\r\n        subscribe: function subscribe(handler) {\r\n            customHandler = handler;\r\n        },\r\n        useCustomOverlay: function useCustomOverlay(customOverlay) {\r\n            if (reporter)\r\n                reporter.useCustomOverlay(customOverlay);\r\n        },\r\n        setOptionsAndConnect: setOptionsAndConnect,\r\n    };\r\n}\r\n\n/* WEBPACK VAR INJECTION */}.call(this, \"?path=//localhost:3001/static/__webpack_hmr\", __webpack_require__(/*! ./../webpack/buildin/module.js */ \"./node_modules/webpack/buildin/module.js\")(module)))\n\n//# sourceURL=webpack:///(webpack)-hot-middleware/client.js?");
 
 /***/ }),
 
@@ -1316,41 +1382,251 @@ eval("\r\nmodule.exports = function (module) {\r\n    if (!module.webpackPolyfil
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\r\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\r\n}) : function(o, v) {\r\n    o[\"default\"] = v;\r\n});\r\nvar __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\r\n    __setModuleDefault(result, mod);\r\n    return result;\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = __importStar(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar ReactDom = __importStar(__webpack_require__(/*! react-dom */ \"./node_modules/@hot-loader/react-dom/index.js\"));\r\nvar Header_1 = __webpack_require__(/*! ../shared/Header */ \"./src/shared/Header.jsx\");\r\nwindow.addEventListener(\"load\", function () {\r\n    ReactDom.hydrate(React.createElement(Header_1.Header, null), document.getElementById('react_root'));\r\n});\r\n\n\n//# sourceURL=webpack:///./src/client/index.jsx?");
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\r\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\r\n}) : function(o, v) {\r\n    o[\"default\"] = v;\r\n});\r\nvar __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\r\n    __setModuleDefault(result, mod);\r\n    return result;\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = __importStar(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar ReactDom = __importStar(__webpack_require__(/*! react-dom */ \"./node_modules/@hot-loader/react-dom/index.js\"));\r\nvar App_tsx_1 = __webpack_require__(/*! ../shared/App.tsx */ \"./src/shared/App.tsx\");\r\nwindow.addEventListener(\"load\", function () {\r\n    ReactDom.hydrate(React.createElement(App_tsx_1.App, null), document.getElementById('react_root'));\r\n});\r\n\n\n//# sourceURL=webpack:///./src/client/index.jsx?");
 
 /***/ }),
 
-/***/ "./src/shared/Header.jsx":
-/*!*******************************!*\
-  !*** ./src/shared/Header.jsx ***!
-  \*******************************/
+/***/ "./src/shared/App.tsx":
+/*!****************************!*\
+  !*** ./src/shared/App.tsx ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\r\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\r\n}) : function(o, v) {\r\n    o[\"default\"] = v;\r\n});\r\nvar __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\r\n    __setModuleDefault(result, mod);\r\n    return result;\r\n};\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Header = void 0;\r\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"./node_modules/react-hot-loader/root.js\");\r\nvar React = __importStar(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar header_css_1 = __importDefault(__webpack_require__(/*! ./header.css */ \"./src/shared/header.css\"));\r\nfunction HeaderComponent() {\r\n    return (React.createElement(\"header\", null,\r\n        React.createElement(\"h1\", { className: header_css_1.default.example }, \"Reddit for our own!!!\")));\r\n}\r\nexports.Header = root_1.hot(HeaderComponent);\r\n\n\n//# sourceURL=webpack:///./src/shared/Header.jsx?");
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\r\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\r\n}) : function(o, v) {\r\n    o[\"default\"] = v;\r\n});\r\nvar __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\r\n    __setModuleDefault(result, mod);\r\n    return result;\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.App = void 0;\r\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"./node_modules/react-hot-loader/root.js\");\r\nvar React = __importStar(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar Layout_1 = __webpack_require__(/*! ./Layout */ \"./src/shared/Layout/index.ts\");\r\n__webpack_require__(/*! ./main.global.css */ \"./src/shared/main.global.css\");\r\nvar Header_1 = __webpack_require__(/*! ./Header */ \"./src/shared/Header/index.ts\");\r\nvar Content_1 = __webpack_require__(/*! ./Content */ \"./src/shared/Content/index.ts\");\r\nfunction AppComponent() {\r\n    return (React.createElement(Layout_1.Layout, null,\r\n        React.createElement(Header_1.Header, null),\r\n        React.createElement(Content_1.Content, null, \"content\")));\r\n}\r\nexports.App = (0, root_1.hot)(AppComponent);\r\n\n\n//# sourceURL=webpack:///./src/shared/App.tsx?");
 
 /***/ }),
 
-/***/ "./src/shared/header.css":
-/*!*******************************!*\
-  !*** ./src/shared/header.css ***!
-  \*******************************/
+/***/ "./src/shared/Content/Content.tsx":
+/*!****************************************!*\
+  !*** ./src/shared/Content/Content.tsx ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-1!./header.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/header.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-1!./header.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/header.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-1!./header.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/header.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.i, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/shared/header.css?");
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Content = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar content_css_1 = __importDefault(__webpack_require__(/*! ./content.css */ \"./src/shared/Content/content.css\"));\r\nfunction Content(_a) {\r\n    var children = _a.children;\r\n    return react_1.default.createElement(\"main\", { className: content_css_1.default.content }, children);\r\n}\r\nexports.Content = Content;\r\n\n\n//# sourceURL=webpack:///./src/shared/Content/Content.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Content/content.css":
+/*!****************************************!*\
+  !*** ./src/shared/Content/content.css ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./content.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Content/content.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./content.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Content/content.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./content.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Content/content.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.i, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/shared/Content/content.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Content/index.ts":
+/*!*************************************!*\
+  !*** ./src/shared/Content/index.ts ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./Content */ \"./src/shared/Content/Content.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/Content/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/Header.tsx":
+/*!**************************************!*\
+  !*** ./src/shared/Header/Header.tsx ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Header = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar header_css_1 = __importDefault(__webpack_require__(/*! ./header.css */ \"./src/shared/Header/header.css\"));\r\nvar SearchBlock_1 = __webpack_require__(/*! ./SearchBlock */ \"./src/shared/Header/SearchBlock/index.ts\");\r\nvar SortBlock_1 = __webpack_require__(/*! ./SortBlock */ \"./src/shared/Header/SortBlock/index.ts\");\r\nvar ThreadTitle_1 = __webpack_require__(/*! ./ThreadTitle */ \"./src/shared/Header/ThreadTitle/index.ts\");\r\nfunction Header() {\r\n    return (react_1.default.createElement(\"header\", { className: header_css_1.default.header },\r\n        react_1.default.createElement(SearchBlock_1.SearchBlock, null),\r\n        react_1.default.createElement(ThreadTitle_1.ThreadTitle, null),\r\n        react_1.default.createElement(SortBlock_1.SortBlock, null)));\r\n}\r\nexports.Header = Header;\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/Header.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/SearchBlock/SearchBlock.tsx":
+/*!*******************************************************!*\
+  !*** ./src/shared/Header/SearchBlock/SearchBlock.tsx ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.SearchBlock = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar searchblock_css_1 = __importDefault(__webpack_require__(/*! ./searchblock.css */ \"./src/shared/Header/SearchBlock/searchblock.css\"));\r\nfunction SearchBlock() {\r\n    return react_1.default.createElement(\"div\", { className: searchblock_css_1.default.searchBlock }, \"search block\");\r\n}\r\nexports.SearchBlock = SearchBlock;\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/SearchBlock.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/SearchBlock/index.ts":
+/*!************************************************!*\
+  !*** ./src/shared/Header/SearchBlock/index.ts ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./SearchBlock */ \"./src/shared/Header/SearchBlock/SearchBlock.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/SearchBlock/searchblock.css":
+/*!*******************************************************!*\
+  !*** ./src/shared/Header/SearchBlock/searchblock.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./searchblock.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/SearchBlock/searchblock.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./searchblock.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/SearchBlock/searchblock.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./searchblock.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/SearchBlock/searchblock.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.i, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/shared/Header/SearchBlock/searchblock.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/SortBlock/SortBlock.tsx":
+/*!***************************************************!*\
+  !*** ./src/shared/Header/SortBlock/SortBlock.tsx ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.SortBlock = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar sortblock_css_1 = __importDefault(__webpack_require__(/*! ./sortblock.css */ \"./src/shared/Header/SortBlock/sortblock.css\"));\r\nfunction SortBlock() {\r\n    return react_1.default.createElement(\"div\", { className: sortblock_css_1.default.sortBlock }, \" Sorting dropdown\");\r\n}\r\nexports.SortBlock = SortBlock;\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/SortBlock/SortBlock.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/SortBlock/index.ts":
+/*!**********************************************!*\
+  !*** ./src/shared/Header/SortBlock/index.ts ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./SortBlock */ \"./src/shared/Header/SortBlock/SortBlock.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/SortBlock/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/SortBlock/sortblock.css":
+/*!***************************************************!*\
+  !*** ./src/shared/Header/SortBlock/sortblock.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./sortblock.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/SortBlock/sortblock.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./sortblock.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/SortBlock/sortblock.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./sortblock.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/SortBlock/sortblock.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.i, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/shared/Header/SortBlock/sortblock.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/ThreadTitle/ThreadTitle.tsx":
+/*!*******************************************************!*\
+  !*** ./src/shared/Header/ThreadTitle/ThreadTitle.tsx ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.ThreadTitle = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar threadtitle_css_1 = __importDefault(__webpack_require__(/*! ./threadtitle.css */ \"./src/shared/Header/ThreadTitle/threadtitle.css\"));\r\nfunction ThreadTitle() {\r\n    return react_1.default.createElement(\"h1\", { className: threadtitle_css_1.default.threadTitle }, \"Header\");\r\n}\r\nexports.ThreadTitle = ThreadTitle;\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/ThreadTitle/ThreadTitle.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/ThreadTitle/index.ts":
+/*!************************************************!*\
+  !*** ./src/shared/Header/ThreadTitle/index.ts ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./ThreadTitle */ \"./src/shared/Header/ThreadTitle/ThreadTitle.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/ThreadTitle/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/ThreadTitle/threadtitle.css":
+/*!*******************************************************!*\
+  !*** ./src/shared/Header/ThreadTitle/threadtitle.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./threadtitle.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/ThreadTitle/threadtitle.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./threadtitle.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/ThreadTitle/threadtitle.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./threadtitle.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/ThreadTitle/threadtitle.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.i, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/shared/Header/ThreadTitle/threadtitle.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/header.css":
+/*!**************************************!*\
+  !*** ./src/shared/Header/header.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./header.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/header.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./header.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/header.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./header.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Header/header.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.i, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/shared/Header/header.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Header/index.ts":
+/*!************************************!*\
+  !*** ./src/shared/Header/index.ts ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./Header */ \"./src/shared/Header/Header.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/Header/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Layout/Layout.tsx":
+/*!**************************************!*\
+  !*** ./src/shared/Layout/Layout.tsx ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Layout = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar layout_css_1 = __importDefault(__webpack_require__(/*! ./layout.css */ \"./src/shared/Layout/layout.css\"));\r\nfunction Layout(_a) {\r\n    var children = _a.children;\r\n    return react_1.default.createElement(\"div\", { className: layout_css_1.default.layout }, children);\r\n}\r\nexports.Layout = Layout;\r\n\n\n//# sourceURL=webpack:///./src/shared/Layout/Layout.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Layout/index.ts":
+/*!************************************!*\
+  !*** ./src/shared/Layout/index.ts ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./Layout */ \"./src/shared/Layout/Layout.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/Layout/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Layout/layout.css":
+/*!**************************************!*\
+  !*** ./src/shared/Layout/layout.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./layout.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Layout/layout.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./layout.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Layout/layout.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./layout.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/Layout/layout.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.i, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/shared/Layout/layout.css?");
+
+/***/ }),
+
+/***/ "./src/shared/main.global.css":
+/*!************************************!*\
+  !*** ./src/shared/main.global.css ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./main.global.css */ \"./node_modules/css-loader/dist/cjs.js!./src/shared/main.global.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !../../node_modules/css-loader/dist/cjs.js!./main.global.css */ \"./node_modules/css-loader/dist/cjs.js!./src/shared/main.global.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./main.global.css */ \"./node_modules/css-loader/dist/cjs.js!./src/shared/main.global.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.i, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/shared/main.global.css?");
 
 /***/ }),
 
 /***/ 0:
-/*!******************************************************************************************************************!*\
-  !*** multi ./src/client/index.jsx webpack-hot-middleware/client?path=http://localhost:3001/static/__webpack_hmr ***!
-  \******************************************************************************************************************/
+/*!*************************************************************************************************************!*\
+  !*** multi ./src/client/index.jsx webpack-hot-middleware/client?path=//localhost:3001/static/__webpack_hmr ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! D:\\kurs\\MyReddit\\src\\client\\index.jsx */\"./src/client/index.jsx\");\nmodule.exports = __webpack_require__(/*! webpack-hot-middleware/client?path=http://localhost:3001/static/__webpack_hmr */\"./node_modules/webpack-hot-middleware/client.js?path=http://localhost:3001/static/__webpack_hmr\");\n\n\n//# sourceURL=webpack:///multi_./src/client/index.jsx_webpack-hot-middleware/client?");
+eval("__webpack_require__(/*! D:\\kurs\\MyReddit\\src\\client\\index.jsx */\"./src/client/index.jsx\");\nmodule.exports = __webpack_require__(/*! webpack-hot-middleware/client?path=//localhost:3001/static/__webpack_hmr */\"./node_modules/webpack-hot-middleware/client.js?path=//localhost:3001/static/__webpack_hmr\");\n\n\n//# sourceURL=webpack:///multi_./src/client/index.jsx_webpack-hot-middleware/client?");
 
 /***/ })
 
