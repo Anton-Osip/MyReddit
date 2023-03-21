@@ -3,12 +3,10 @@ import { useUserData } from '../../../hooks/useUserData'
 import styles from './searchblock.css'
 import { UserBlock } from './UserBlock'
 
-interface ISearchBlockProps {
-	token: string
-}
 
-export function SearchBlock({ token }: ISearchBlockProps) {
-	const [data] = useUserData(token)
+
+export function SearchBlock() {
+	const [data] = useUserData()
 
 	return (
 		<div className={styles.searchBlock}>

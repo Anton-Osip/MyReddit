@@ -1,11 +1,13 @@
 import { useEffect, useState, useContext } from 'react'
 import axios from 'axios'
+import { tokenContext } from '../context/tokenContext'
 
 interface IUserData {
 	name?: string
 	iconImg?: string
 }
-export function useUserData(token: string) {
+export function useUserData() {
+    const token = useContext(tokenContext)
 	const [data, setData] = useState<IUserData>({})
 
 	useEffect(() => {
