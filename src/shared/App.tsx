@@ -1,16 +1,18 @@
 import { hot } from 'react-hot-loader/root'
-import * as React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Layout } from './Layout'
 import './main.global.css'
 import { Header } from './Header'
 import { Content } from './Content'
 import { CardsList } from './CardsList'
-import { Dropdown } from './Dropdown'
+import { useToken } from '../hooks/useToken'
 
 function AppComponent() {
+	const [token] = useToken()
+
 	return (
 		<Layout>
-			<Header />
+			<Header token={token} />
 			<Content>
 				<CardsList />
 			</Content>
@@ -18,4 +20,4 @@ function AppComponent() {
 	)
 }
 
-export const App = hot(AppComponent)
+export const App = hot(() => <AppComponent />)

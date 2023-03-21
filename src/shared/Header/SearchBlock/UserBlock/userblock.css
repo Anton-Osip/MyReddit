@@ -18,6 +18,9 @@
 	border-radius: 100%;
 	box-shadow: none;
 }
+.avatarBox img {
+	width: 100%;
+}
 
 .avatarImage {
 	width: 100%;

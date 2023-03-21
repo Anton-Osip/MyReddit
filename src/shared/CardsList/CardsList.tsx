@@ -6,7 +6,6 @@ export function CardsList() {
 	return (
 		<ul className={styles.cardsList}>
 			<Card />
-			<Card />
 		</ul>
 	)
 }

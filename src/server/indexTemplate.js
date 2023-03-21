@@ -1,6 +1,6 @@
-export const indexTemplate = (content) => `
+export const indexTemplate = (content, token) => `
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,10 @@ export const indexTemplate = (content) => `
 
 <body>
   <div id="react_root">${content}</div>
+  <script>
+    window.__token__='${token}'
+  </script>
 </body>
 
 </html>
-`;
+`
