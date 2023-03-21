@@ -14,9 +14,6 @@ function AppComponent() {
 			<Content>
 				<CardsList />
 			</Content>
-			<Dropdown button={<button>test</button>}>
-				<CardsList />
-			</Dropdown>
 		</Layout>
 	)
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import className from 'classnames'
-import styles from './breack.css'
+import styles from './break.css'
 
 type TBreakSize = 4 | 8 | 12 | 16 | 20
 type TDisplays = 'mobile' | 'tablet' | 'desktop'
