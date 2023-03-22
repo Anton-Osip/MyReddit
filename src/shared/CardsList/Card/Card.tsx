@@ -1,17 +1,28 @@
 import React from 'react'
-import styles from './card.css'
 import { Controls } from './Controls'
 import { Menu } from './Menu'
 import { Preview } from './Preview'
 import { TextContent } from './TextContent'
 
-export function Card() {
+interface IPostsData {
+	value: IPostData
+}
+
+interface IPostData {
+	author: string
+	num_comments: number
+	previewImage: string
+	score: number
+	title: string
+}
+
+export function Card(props: IPostsData) {
 	return (
-		<li className={styles.card}>
-			<TextContent />
-			<Preview />
+		<>
+			<TextContent author={props.value.author} title={props.value.title} />
+			<Preview previewImage={props.value.previewImage} />
 			<Menu />
-			<Controls />
-		</li>
+			<Controls num_comments={props.value.num_comments} score={props.value.score} />
+		</>
 	)
 }

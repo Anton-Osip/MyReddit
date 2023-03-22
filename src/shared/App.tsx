@@ -1,5 +1,5 @@
 import { hot } from 'react-hot-loader/root'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Layout } from './Layout'
 import './main.global.css'
 import { Header } from './Header'
@@ -8,19 +8,22 @@ import { CardsList } from './CardsList'
 import { useToken } from '../hooks/useToken'
 import { tokenContext } from '../context/tokenContext'
 import { UserContextProvider } from '../context/userContext'
+import { PostsContextProvider } from '../context/PostsContext '
+import { usePostsData } from '../hooks/usePostsData'
 
 function AppComponent() {
 	const [token] = useToken()
-
 	return (
 		<tokenContext.Provider value={token}>
 			<UserContextProvider>
-				<Layout>
-					<Header />
-					<Content>
-						<CardsList />
-					</Content>
-				</Layout>
+				<PostsContextProvider>
+					<Layout>
+						<Header />
+						<Content>
+							<CardsList />
+						</Content>
+					</Layout>
+				</PostsContextProvider>
 			</UserContextProvider>
 		</tokenContext.Provider>
 	)

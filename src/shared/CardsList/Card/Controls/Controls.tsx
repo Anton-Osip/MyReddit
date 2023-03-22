@@ -5,15 +5,20 @@ import { KarmaCounter } from './KarmaCounter'
 import { SaveButton } from './SaveButton'
 import { ShareButton } from './ShareButton'
 
-export function Controls() {
+interface IControls {
+	num_comments: number
+	score: number
+}
+export function Controls(props: IControls) {
 	return (
 		<div className={styles.controls}>
-			<KarmaCounter />
-			<CommentsButton />
+			<KarmaCounter score={props.score} />
+			<CommentsButton num_comments={props.num_comments} />
 			<div className={styles.actions}>
-				<ShareButton />
 				<SaveButton />
+				<ShareButton />
 			</div>
 		</div>
 	)
 }
+

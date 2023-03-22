@@ -1,15 +1,19 @@
 import React from 'react'
 import styles from './karmacounter.css'
 
-export function KarmaCounter() {
+interface IKarmaCounter {
+	score: number
+}
+
+export function KarmaCounter(props: IKarmaCounter) {
 	return (
 		<div className={styles.karmaCounter}>
 			<button className={styles.up}>
 				<svg width='19' height='10' viewBox='0 0 19 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
-					<path d='M9.5 0L0 10H19L9.5 0Z' fill='#c4c4c4' />
+					<path d='M9.5 0L0 10H19L9.5 0Z' fill='#C4C4C4' />
 				</svg>
 			</button>
-			<span className={styles.karmaValue}>234</span>
+			<span className={styles.karmaValue}>{props.score}</span>
 			<button className={styles.down}>
 				<svg
 					className={styles.down}
@@ -19,7 +23,7 @@ export function KarmaCounter() {
 					fill='none'
 					xmlns='http://www.w3.org/2000/svg'
 				>
-					<path d='M9.5 0L0 10H19L9.5 0Z' fill='#c4c4c4' />
+					<path d='M9.5 0L0 10H19L9.5 0Z' fill='#C4C4C4' />
 				</svg>
 			</button>
 		</div>

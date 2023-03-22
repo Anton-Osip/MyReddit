@@ -1,7 +1,11 @@
 import React from 'react'
 import styles from './commentsbutton.css'
 
-export function CommentsButton() {
+interface ICommentsButton {
+	num_comments: number
+}
+
+export function CommentsButton(props: ICommentsButton) {
 	return (
 		<button className={styles.commentsButton}>
 			<svg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -11,7 +15,7 @@ export function CommentsButton() {
 				/>
 			</svg>
 
-			<span className={styles.commentsNumber}>13</span>
+			<span className={styles.commentsNumber}> {props.num_comments}</span>
 		</button>
 	)
 }

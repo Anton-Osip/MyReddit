@@ -1,16 +1,20 @@
 import React from 'react'
 import styles from './userlink.css'
 
-export function UserLink() {
+interface IUserLink {
+	author: string
+}
+
+export function UserLink(props: IUserLink) {
 	return (
 		<div className={styles.userLink}>
 			<img
-				src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/ea7a3c32163929.567197ac70bda.png'
+				src='https://w7.pngwing.com/pngs/754/2/png-transparent-samsung-galaxy-a8-a8-user-login-telephone-avatar-pawn-blue-angle-sphere-thumbnail.png'
 				alt='avatar'
 				className={styles.avatar}
 			/>
-			<a href='#user-url' className={styles.username}>
-				Дмитрий Гришин
+			<a href='#user-name' className={styles.username}>
+				{props.author}
 			</a>
 		</div>
 	)

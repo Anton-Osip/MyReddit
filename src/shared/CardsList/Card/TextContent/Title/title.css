@@ -3,6 +3,7 @@
 	line-height: 19px;
 	font-weight: normal;
 	margin: 0;
+	width: 100%;
 }
 
 .postLink {
@@ -20,20 +21,7 @@
 	bottom: 0;
 	left: 0;
 }
-
 @media all and (min-width: 1024px) {
-	.textContent {
-		flex-basis: 540px;
-		order: 1;
-		margin: 0 0 0 38px;
-		flex-flow: column-reverse nowrap;
-		justify-content: center;
-	}
-
-	.textContent > * {
-		flex: 0 0;
-	}
-
 	.title {
 		padding: 0 0 10px 0;
 		font-size: 20px;
